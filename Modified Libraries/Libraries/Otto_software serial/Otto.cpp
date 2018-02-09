@@ -22,14 +22,14 @@ void Otto::init(int YL, int YR, int RL, int RR, bool load_calibration, int Noise
 
   attachServos();
   isOttoResting=false;
-/*
+
   if (load_calibration) {
     for (int i = 0; i < 4; i++) {
       int servo_trim = EEPROM.read(i);
       if (servo_trim > 128) servo_trim -= 256;
       servo[i].SetTrim(servo_trim);
     }
-  } */
+  } 
   
   for (int i = 0; i < 4; i++) servo_position[i] = 90;
 
@@ -68,7 +68,7 @@ void Otto::detachServos(){
 ///////////////////////////////////////////////////////////////////
 //-- OSCILLATORS TRIMS ------------------------------------------//
 ///////////////////////////////////////////////////////////////////
-/*
+
 void Otto::setTrims(int YL, int YR, int RL, int RR) {
   servo[0].SetTrim(YL);
   servo[1].SetTrim(YR);
@@ -83,7 +83,7 @@ void Otto::saveTrimsOnEEPROM() {
   } 
       
 }
-*/
+
 
 ///////////////////////////////////////////////////////////////////
 //-- BASIC MOTION FUNCTIONS -------------------------------------//
