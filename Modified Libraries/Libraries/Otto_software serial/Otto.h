@@ -3,7 +3,7 @@
 
 #include <Servo.h>
 #include "Oscillator.h"
-//#include <EEPROM.h>
+#include <EEPROM.h>
 
 #include "US.h"
 #include "MaxMatrix.h"
